@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-nav .nav-link {
+    position: relative;
+  }
+  
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #8b4848;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+
+  .red-background {
+    background-color: red;
+    position: relative;
+    width: 300px; /* Adjust width and height as needed */
+    height: 350px;
+    border-radius: 30px;
+  }
+  
+  .overlap-image {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -20%);
+    z-index: 1;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fade-in-animation 1s forwards;
+  }
+  
+  @keyframes fade-in-animation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .underline {
+    display: block;
+    width: 10%;
+    margin: 0 auto;
+    border-bottom: 2px solid orange;
+  }
+  
+  .underline1 {
+    display: inline-block;
+    width: 10%;
+    border-bottom: 2px solid orange;
+  }
+  
+  .underline3 {
+    display: block;
+    width: 10%;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+  }
+
+  .underline4 {
+    display: block;
+    width: 7%;
+    margin: 0 auto;
+    border-bottom: 3px solid rgb(156, 41, 41);
+  }
+  
+  .underline5 {
+    display: inline-block;
+    width: 20%;
+    border-bottom: 3px solid orange;
+  }
+
+  .rounded-background {
+    background-color: pink;
+    border-radius: 0 50% 50% 0;
+    padding: 100px;
+    position: relative;
+  }
+  
+  .Ic{
+    align-items: center;
+  }
+
+  .progress-bar {
+    background-color: orange;
+  }
+  
+  .background1 {
+    position: relative;
+    background-color: #f2f2f2;
+    height: 400px;
+  }
+  
+  .overlay-image1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+  }
+  

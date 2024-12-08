@@ -1,0 +1,4 @@
+.card:hover {
+    transform: translateX(-10px);
+    transition: transform 0.10s ease;
+  }
